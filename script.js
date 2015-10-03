@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= $about.offset().top - 10) {
+        if (scroll >= $about.offset().top - 80) {
             $chevUp.addClass("active");
         } else {
             $chevUp.removeClass("active");
