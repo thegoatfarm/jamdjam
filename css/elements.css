@@ -1,9 +1,16 @@
 /* NAV */
-
+body {
+    padding-top: 75px;
+}
 .nav-container {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 75px;
     width: 100%;
-    background: white;
+    background: transparent;
     text-align: center;
 }
 iframe {
@@ -34,6 +41,7 @@ ul.nav li {
     padding-left: 25px;
     height: 50px;
     line-height: 50px;
+    background: white;
 }
 /*.nav li > a:hover:after {
     content: "";
