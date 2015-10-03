@@ -1,0 +1,302 @@
+/*@font-face {
+    font-family: "DINPro Medium";
+    src: url(../fonts/DINPro-Medium.otf);
+}
+@font-face {
+    font-family: "DINPro Regular";
+    src: url(../fonts/DINPro-Regular.otf);
+}
+@font-face {
+    font-family: "DINPro Bold";
+    src: url(../fonts/DINPro-Bold.otf);
+}*/
+@font-face {
+    font-family: "Interstate Light Compressed";
+    src: url(../fonts/Interstate-LightCompressed.ttf);
+}
+
+
+::selection {
+    background: #f15a3b; /* WebKit/Blink Browsers */
+    color: white;
+}
+::-moz-selection {
+    background: #f15a3b; /* Gecko Browsers */
+    color: white;
+}
+
+html,body { width: 100%; height: 100%; min-height: 700px; padding: 0; margin: 0;}
+/*ul { padding:0; margin:0; white-space:nowrap; }
+li { margin: 0; list-style-type:none; display:block; float: left; }*/
+
+a { text-decoration: none; color: black; }
+.cover {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -235px; 
+    margin-left: -300px;*/
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    height: 330px;
+    border: 2px solid black;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 148px 0;
+    margin-bottom: 60px;
+    text-align: center;
+    /*margin: 0 auto -140px;*/
+}
+.wrapper img {
+    width: 600px;
+    height: auto;
+}
+.cover-white, .cover-white .stamp, .cover-white .inner-cover {
+    border-color: white !important;
+    color: white;
+}
+
+.inner-cover {
+    width: 87%;
+    height: 290px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tagline-container {
+    position: relative;
+    height: 50px;
+    border: 1px solid;
+    border-color: inherit;
+}
+.fe {
+    float: left;
+    padding: 0 15px;
+    display: block;
+    font-family: "Interstate Light Compressed";
+    font-size: 30px;
+    color: inherit;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid;
+    border-color: inherit;
+}
+.tagline {
+    overflow: hidden;
+    display: table;
+    height: 50px;
+    padding: 0 20px;
+    /*text-align: center;*/
+}
+.tag-text {
+    vertical-align: middle;
+    display: table-cell;
+    font-family: "Courier New", monospace;
+    line-height: 15px;
+    font-size: 15px;
+    color: inherit;
+    text-align: left;
+}
+
+.space {
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+    height: 5px;
+}
+h1.title {
+    margin: 0;
+    color: inherit;
+    /*font-family: "DINPro Bold";*/
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.075em;
+    text-align: center;
+    height: 180px;
+    line-height: 180px;
+    border: 1px solid;
+    border-color: inherit;
+}
+h2.presenter {
+    margin: 0;
+    color: inherit;
+    /*font-family: "DINPro Regular";*/
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid;
+    border-color: inherit;
+    border-bottom: none;
+    font-weight: normal;
+}
+h3.stamp {
+    position: absolute;
+    bottom: 100%;
+    right: 6%;
+    margin: 0 0 .5em;
+    /*font-family: "DINPro Medium";*/
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #998675;
+    font-weight: normal;
+}
+
+.manual-container {
+    margin: 0 auto 50px;
+    padding: 60px 0;
+    position: relative;
+    width: 800px;
+    background: #dcdcd3;
+}
+#fe-header-before {
+    display: inline;
+    border: 1px solid #231f20;
+    color: #231f20;
+    font-size: 22px;
+    letter-spacing: 0;
+    font-family: "Interstate Light Compressed";
+    height: 22px;
+    line-height: 22px;
+    margin-right: 12px;
+    padding: 0 12px;
+}
+h3.section-header {
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+h3.section-header > span:not(#fe-header-before) {
+    position: relative;
+    /*font-family: "DINPro Medium";*/
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    color: #231f20;
+}
+h3.section-header > span:not(#fe-header-before)::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    border-bottom: 1px solid #f15a3b;
+}
+.mission > p{
+    width: 100%;
+    margin: auto;
+    /*font-family: "DINPro Medium";*/
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    line-height: 45px;
+    color: #231f20;
+}
+.mission {
+    /*width: 700px;*/
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f15a3b;
+}
+
+h4 {
+    color: #231f20;
+    /*font-family: "DINPro Medium";*/
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    margin: 40px 0 10px;
+}
+.about-text {
+    margin: 0 auto;
+    color: #231f20;
+    font-family: "Courier New", monospace;
+    line-height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+}
+.dictionary {
+    color: #898989;
+}
+.outline {
+    pointer-events: none;
+    position: absolute;
+    border: 1px solid black;
+    top: 20px;
+    bottom: 20px;
+    left: -20px;
+    right: -20px;
+    /*width: 900px;*/
+    margin: auto;
+}
+
+.wide-page {
+    background: #dcdcd3;
+    width: 100%;
+    margin: 60px auto;
+    padding: 40px 0;
+}
+
+.panelists {
+    position: relative;
+    margin-top: 75px;
+}
+.panelists::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 1px solid #e0ddd5;
+}
+.panelist {
+    border: 1px solid #231f20;
+    border-left: none;
+    position: relative;
+    margin-bottom: -1px;
+}
+.panelist h4 {
+    top: -26px;
+    left: 0;
+    padding: 0 20px;
+    font-family: "Courier New", monospace;
+    font-weight: 400;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0;
+    background: #e0ddd5;
+    position: absolute;
+    height: 52px;
+    line-height: 52px
+}
+.panelist p {
+    font-family: "Courier New", monospace;
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 36px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.text-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.calendar-container {
+    text-align: center;
+}
+.calendar {
+    margin: 25px 0;
+}

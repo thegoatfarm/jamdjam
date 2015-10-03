@@ -1,0 +1,251 @@
+/* NAV */
+
+.nav-container {
+    height: 75px;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+iframe {
+    margin: 0 auto 50px;
+}
+ul.nav {
+    height: 50px;
+    font-size: 0; /* removes space between elements */
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #231f20; 
+    border-top: none;
+}
+
+ul.nav li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    /*width: 100%;*/
+    text-align: center;
+}
+.nav li > a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-left: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+/*.nav li > a:hover:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid #f15a3b;
+
+}*/
+.nav > li > a.submit {
+    background: #f15a3b;
+    color: white;
+}
+.nav > li > a:hover, .nav > li > a.big {
+    color: #231f20;
+    background: #dcdcd3;
+}
+.nav li a > .big {
+    display: inline-block;
+    background-color: #dcdcd3;
+    line-height: 50px;
+    vertical-align: text-bottom;
+    border-right: 1px solid #231f20; 
+    margin-top: 0;
+    margin-left: 0;
+    padding-right: 20px;
+    margin-right: 0;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+.nav li .higher {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-family: "Interstate Light Compressed";
+    font-size: 16px;
+    line-height: 16px;
+}
+.nav li .lower {
+    border-right: 1px solid #231f20; 
+    /*position: absolute;*/
+    margin-top: 25px;
+    margin-left: 12px;
+    padding-right: 20px;
+    margin-right: 0;
+    text-align: left;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 25px;
+    vertical-align: text-bottom;
+    height: 25px;
+    display: inline-block;
+}
+.nav li:last-child .lower {
+    border-right: none;
+}
+
+
+
+
+/* CHEVRON SCROLLER */
+
+.toTop {
+    z-index: 100;
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+.toTop:before, .toTop:after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-color: #f15a3b;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    -webkit-transition: -webkit-transform .6s .6s, opacity .6s, border-color .2s;
+    -moz-transition: -moz-transform .6s .6s, opacity .6s, border-color .2s;
+    -o-transition: -o-transform .6s .6s, opacity .6s, border-color .2s;
+    transition: transform .6s .6s, opacity .6s, border-color .2s;
+    opacity: 0;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    vertical-align: top;
+    width: 20px;
+}
+.toTop:after {
+    top: 15px;
+}
+.toTop.active:before, .toTop.active:after {
+    opacity: 1;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.toTop:hover:before, .toTop:hover:after {
+    border-color: #231f20;
+}
+
+
+/* FOOTER */
+
+.footer, .push {
+    margin-top: 29px;
+    height: 140px;
+    clear: both;
+}
+.footer .links {
+    margin-top: 0;
+    height: 35px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+.footer .links li {
+    display: inline-block;
+    width: 100px;
+}
+.footer .links li.long {
+    width: 200px;
+}
+.footer .links li.long span {
+    white-space: nowrap;
+}
+.footer .links .non-link {
+    border-right: none;
+    height: 35px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0 8px;
+    min-width: 80px;
+}
+.footer .links li > a {
+    height: 35px;
+}
+.footer .block{
+    width: 100%;
+    height: 95px;
+    background: #dcdcd3;
+}
+
+ul.links li {
+    margin: 0;
+    list-style-type: none;
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+}
+.links li > a {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0 8px;
+    height: 50px;
+    min-width: 80px;
+    border-right: 1px solid black; 
+}
+.links li .higher {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-family: "Interstate Light Compressed";
+    font-size: 16px;
+}
+.links li .lower {
+    position: absolute;
+    left: 16px;
+    bottom: 8px;
+    text-align: left;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.wufoo {
+    width: 700px;
+    margin: auto;
+    padding-top: 40px;
+}
+.rfp-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    background: #dcdcd3;
+}
+.rfp-container .outline {
+    pointer-events: none;
+    position: absolute;
+    border: 1px solid black;
+    top: -20px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    width: 900px;
+    margin: auto;
+}
