@@ -14,8 +14,10 @@ $(document).ready(function() {
 
     $(".nav a").click(function(e) {
         // smoothly scroll to top
+        var pos = $($(this).attr("href")).offset().top - 75;
+        if (pos < 0) pos = 0;
         $("body, html").animate({
-            "scrollTop": $($(this).attr("href")).offset().top + "px"
+            "scrollTop": pos + "px"
         }, 1200);
         e.preventDefault();
         return false;
