@@ -13,6 +13,7 @@ $(document).ready(function() {
     });
 
     $(".nav a").click(function(e) {
+        if ($(this).attr("href")[0] != '#') return;
         // smoothly scroll to top
         var pos = $($(this).attr("href")).offset().top - 75;
         if (pos < 0) pos = 0;

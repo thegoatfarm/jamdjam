@@ -1,0 +1,31 @@
+.download > p {
+    width: 550px;
+    margin: 0;
+    /*font-family: "DINPro Medium";*/
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    line-height: 45px;
+    color: #231f20;
+    display: inline-block;
+}
+.download > a {
+    float: right;
+    text-align: right;
+    vertical-align: top;
+    font-weight: normal;
+    padding: 0 20px;
+    height: 42px;
+    line-height: 42px;
+    color: white;
+    background: #f15a3b;
+    display: inline-block;
+}
+.download {
+    /*width: 700px;*/
+    margin: auto;
+}
+.orange {
+    color: #f15a3b;
+}
+
+#submit .container { padding: 40px 0; }
